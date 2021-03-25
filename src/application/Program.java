@@ -1,7 +1,6 @@
 package application;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
@@ -18,7 +17,7 @@ public class Program {
 		lista.add(new Product("DVD",300.00));
 		lista.add(new Product("Fogao",500.00));
 		
-		Collections.sort(lista);
+		lista.sort(new MyComparator());
 		
 		for(Product p: lista) {
 			System.out.println(p);
